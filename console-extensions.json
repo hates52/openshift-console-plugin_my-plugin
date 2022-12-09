@@ -1,20 +1,28 @@
 [
   {
+    "type": "console.navigation/section",
+    "properties": {
+      "id": "ossmconsole",
+      "perspective": "admin",
+      "name": "My Plugin"
+    }
+  },
+  {
     "type": "console.page/route",
     "properties": {
       "exact": true,
-      "path": "/example",
-      "component": { "$codeRef": "ExamplePage" }
+      "path": "/ossmconsoleoverview",
+      "component": { "$codeRef": "OverviewPage" }
     }
   },
   {
     "type": "console.navigation/href",
     "properties": {
-      "id": "example",
-      "name": "Plugin Example",
-      "href": "/example",
+      "id": "ossmconsoleoverview",
+      "name": "Overview",
+      "href": "/ossmconsoleoverview",
       "perspective": "admin",
-      "section": "home"
+      "section": "ossmconsole"
     }
   }
 ]
